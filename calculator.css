@@ -1,0 +1,93 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Center calculator */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+/* Calculator container */
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Display */
+.display {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+button {
+    height: 55px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #444;
+    color: #fff;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #666;
+}
+
+/* Operators */
+.operator {
+    background: #ff9800;
+}
+
+.operator:hover {
+    background: #e68900;
+}
+
+/* Equals */
+.equals {
+    background: #28a745;
+}
+
+.equals:hover {
+    background: #218838;
+}
+
+/* Clear */
+.clear {
+    background: #dc3545;
+}
+
+.clear:hover {
+    background: #c82333;
+}
+
+/* Zero button */
+.zero {
+    grid-column: span 2;
+}
